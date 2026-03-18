@@ -1,6 +1,8 @@
 # Wind Forecast Monitoring
 
-Live demo: [https://wind-forecast-one.vercel.app](https://wind-forecast-one.vercel.app)
+### Live demo
+
+[https://wind-forecast-one.vercel.app](https://wind-forecast-one.vercel.app)
 
 A small full‑stack app to compare actual vs forecast wind‑related series with horizon‑based error analysis.
 
@@ -15,6 +17,5 @@ The repository also includes an exploratory analysis notebook (WindForecastAnaly
 ## Analysis Notebook
 - WindForecastAnalysis.ipynb: Google Colab–style notebook showing data exploration, cleaning steps, and example plots that informed the final dashboard.
 
-### Live Demo
 
-wind-forecast-one.vercel.app
+
