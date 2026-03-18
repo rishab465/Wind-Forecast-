@@ -1,6 +1,6 @@
 # Wind Forecast Monitoring
 
-Live demo: [wind-forecast-one.vercel.app](https://wind-forecast-one.vercel.app)
+Live demo: [https://wind-forecast-one.vercel.app](https://wind-forecast-one.vercel.app)
 
 A small full‑stack app to compare actual vs forecast wind‑related series with horizon‑based error analysis.
 
