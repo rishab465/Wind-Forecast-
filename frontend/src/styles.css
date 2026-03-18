@@ -1,0 +1,227 @@
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at top left, #0f172a, #020617);
+  color: #e5e7eb;
+}
+
+.app-header {
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.4);
+  background: linear-gradient(to right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.6));
+  backdrop-filter: blur(12px);
+}
+
+.app-header h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.8rem;
+}
+
+.app-header p {
+  margin: 0;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.app-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: minmax(0, 360px) minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 1.5rem 2rem 2rem;
+}
+
+.controls-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.chart-section {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 1rem;
+  padding: 1rem 1.25rem 1.25rem;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.35);
+}
+
+.controls-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.controls-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  color: #d1d5db;
+  gap: 0.25rem;
+}
+
+.controls-form input[type='datetime-local'],
+.controls-form input[type='number'] {
+  background: rgba(15, 23, 42, 0.9);
+  border-radius: 0.5rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  padding: 0.4rem 0.5rem;
+  color: #e5e7eb;
+  font-size: 0.85rem;
+}
+
+.controls-form input:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.5);
+}
+
+.controls-form button[type='submit'] {
+  align-self: flex-start;
+  margin-top: 0.5rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(to right, #0ea5e9, #22c55e);
+  color: #0b1120;
+  font-weight: 600;
+  font-size: 0.85rem;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(34, 197, 94, 0.4);
+}
+
+.controls-form button[disabled] {
+  opacity: 0.7;
+  cursor: default;
+  box-shadow: none;
+}
+
+.metrics-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0.6rem 0.75rem;
+  border-radius: 0.75rem;
+  background: radial-gradient(circle at top left, rgba(15, 118, 110, 0.55), rgba(15, 23, 42, 0.9));
+}
+
+.metric-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.metric-label {
+  color: #a5b4fc;
+}
+
+.metric-value {
+  font-weight: 600;
+}
+
+.metric-item.metric-table {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.metric-item.metric-table table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.metric-item.metric-table th,
+.metric-item.metric-table td {
+  padding: 0.15rem 0.35rem;
+  text-align: right;
+}
+
+.metric-item.metric-table th:first-child,
+.metric-item.metric-table td:first-child {
+  text-align: left;
+}
+
+.metric-item.metric-table thead {
+  color: #9ca3af;
+}
+
+.metric-item.metric-table tbody tr:nth-child(odd) {
+  background-color: rgba(15, 23, 42, 0.6);
+}
+
+.insight-box {
+  margin-top: 0.25rem;
+  padding-top: 0.25rem;
+  border-top: 1px dashed rgba(148, 163, 184, 0.5);
+}
+
+.warning-box {
+  margin-top: 0.25rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: 0.5rem;
+  background-color: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.4);
+}
+
+.chart-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.chart-placeholder {
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.error-chart {
+  margin-top: 1rem;
+}
+
+.error-chart-title {
+  font-size: 0.8rem;
+  margin-bottom: 0.25rem;
+  color: #9ca3af;
+}
+
+.tooltip-box {
+  background: rgba(15, 23, 42, 0.95);
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid rgba(148, 163, 184, 0.6);
+  font-size: 0.75rem;
+  color: #e5e7eb;
+}
+
+.tooltip-title {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+.error-message {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+  color: #fecaca;
+}
+
+@media (max-width: 900px) {
+  .app-main {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "wind-forecast-monitoring-root",
+  "private": true,
+  "scripts": {
+    "postinstall": "npm install --prefix backend",
+    "start": "npm start --prefix backend"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
